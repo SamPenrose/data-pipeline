@@ -18,52 +18,53 @@ Telemetry Errors
 --]]
 
 require "cjson"
+require "os"
+require "string"
 
-_PRESERVATION_VERSION = 2 -- Bump if hash algorithm changes.
+_PRESERVATION_VERSION = 5
 
 local err = {
     err_type = nil,
     err_msg = nil
 }
 
-function err.hash(self)
-    return self.err_type .. "|" .. self.err_msg
-end
+local key, channel, build_id, ts, size
 
-local hash, channel, build_id, ts
-
-by_build_id = {}
-by_channel = {}
+errors = {}
+size_high_values = {}
 
 function process_message()
     err.err_type = read_message("Fields[DecodeErrorType]") or "MISSING"
     err.err_msg = read_message("Fields[DecodeError]") or "MISSING"
-    hash = err:hash()
     ts = read_message("Timestamp")
+    ts = os.date("%Y.%m.%dT%H:%M:%S", ts/1e9)
 
     build_id = read_message("Fields[appBuildId]") or "MISSING"
-    build_errors = by_build_id[build_id]
-    if not build_errors then
-        by_build_id[build_id] = {[hash] = {ts}}
+    channel = read_message("Fields[appUpdateChannel]") or "MISSING"
+
+    key = channel .. "-" .. build_id
+    errors_for_key = errors[key]
+    if not errors_for_key then
+        errors[key] = {[err.err_type] = {{ts, err.err_msg}}}
     else
-        err_times = build_errors[hash]
-        if not err_times then
-            build_errors[hash] = {ts}
+        errors_of_type_for_key = errors_for_key[err.err_type]
+        if not errors_of_type_for_key then
+            errors_for_key[err.err_type] = {{ts, err.err_msg},}
         else
-            err_times[#err_times+1] = ts
+            errors_of_type_for_key[#errors_of_type_for_key+1] = {ts, err.err_msg}
         end
     end
 
-    channel = read_message("Fields[appUpdateChannel]") or "MISSING"
-    channel_errors = by_channel[channel]
-    if not channel_errors then
-        by_channel[channel] = {[hash] = {ts}}
-    else
-        err_times = channel_errors[hash]
-        if not err_times then
-            channel_errors[hash] = {ts}
-        else
-            err_times[#err_times+1] = ts
+    if err.err_type == "size" then
+        size = tonumber(string.match(err.err_msg, '%d+$'))
+        if not size then
+            size = 0
+        end
+        high_value = size_high_values[key]
+        if not high_value then
+            size_high_values[key] = size
+        elseif size > high_value then
+            size_high_values[key] = size
         end
     end
 
@@ -71,13 +72,13 @@ function process_message()
 end
 
 function timer_event(ns)
-    local ok, build_error_json = pcall(cjson.encode, by_build_id)
+    local ok, errors_json = pcall(cjson.encode, errors)
     if ok then
-        inject_payload("text", "Errors by Build ID", build_error_json)
+        inject_payload("text", "Errors by Channel-BuildID", errors_json)
     end
 
-    local ok, channel_error_json = pcall(cjson.encode, by_channel)
+    local ok, sizes_json = pcall(cjson.encode, size_high_values)
     if ok then
-        inject_payload("text", "Errors by Channel", channel_error_json)
+        inject_payload("text", "Highest Size Values by Channel-BuildID", sizes_json)
     end
 end
