@@ -19,7 +19,7 @@ Telemetry Errors
 
 require "cjson"
 
-_PRESERVATION_VERSION = 0 -- Bump if hash algorithm changes.
+_PRESERVATION_VERSION = 2 -- Bump if hash algorithm changes.
 
 local err = {
     err_type = nil,
@@ -36,8 +36,8 @@ by_build_id = {}
 by_channel = {}
 
 function process_message()
-    err.err_type = read_message("DecodeErrorType") or "MISSING"
-    err.err_msg = read_message("DecodeError") or "MISSING"
+    err.err_type = read_message("Fields[DecodeErrorType]") or "MISSING"
+    err.err_msg = read_message("Fields[DecodeError]") or "MISSING"
     hash = err:hash()
     ts = read_message("Timestamp")
 
