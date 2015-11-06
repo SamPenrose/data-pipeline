@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Crash Summary",
+  "description": "The crash summary derived stream",
+  "type": "array",
+  "items": [
+    {
+      "type": "number",
+      "description": "Timestamp"
+    },
+    {
+      "type": "string",
+      "description": "crashDate: Lua DATE"
+    },
+    {
+      "type": "string",
+      "minLength": 36,
+      "maxLength": 36,
+      "description": "clientId: UUID"
+    },
+    {
+      "type": "string",
+      "maxLength": 32,
+      "description": "buildVersion"
+    },
+    {
+      "type": "string",
+      "minLength": 14,
+      "maxLength": 14,
+      "description": "buildId"
+    },
+    {
+      "type": "string",
+      "maxLength": 32,
+      "description": "buildArchitecture"
+    },
+    {
+      "type": "string",
+      "maxLength": 7,
+      "description": "channel"
+    },
+    {
+      "type": "string",
+      "maxLength": 7,
+      "description": "os"
+    },
+    {
+      "type": "string",
+      "maxLength": 32,
+      "description": "osVersion"
+    },
+    {
+      "type": "string",
+      "maxLength": 32,
+      "description": "osServicepackMajor"
+    },
+    {
+      "type": "string",
+      "maxLength": 32,
+      "description": "osServicepackMinor"
+    },
+    {
+      "type": "string",
+      "maxLength": 32,
+      "description": "locale"
+    },
+    {
+      "type": "string",
+      "maxLength": 32,
+      "description": "activeExperiment"
+    },
+    {
+      "type": "string",
+      "maxLength": 32,
+      "description": "activeExperimentBranch"
+    },
+    {
+      "type": "string",
+      "maxLength": 5,
+      "description": "country"
+    },
+    {
+      "type": "boolean",
+      "description": "hasCrashEnvironment"
+    }
+  ],
+  "additionalItems": false,
+  "minItems": 16,
+  "maxItems": 16
+}

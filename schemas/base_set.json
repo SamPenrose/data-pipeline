@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "v4 ping base set",
+  "description": "A partial schema for the base set",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "description": "The documentId, not the clientId"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "creationDate": {
+      "type": "string",
+      "description": "%Y-%m-%d"
+    },
+    "version": {
+      "type": "number",
+      "minimum": 4,
+      "description": "The ping format version"
+    },
+    "application": {
+      "type": "object",
+      "properties": {
+        "architecture": {
+          "type": "string",
+          "description": "E.g. x86"
+        },
+        "buildId": {
+          "type": "string",
+          "description": "E.g. 20141126041045"
+        },
+        "name": {
+          "type": "string",
+          "description": "Firefox, etc."
+        },
+        "version": {
+          "type": "string",
+          "description": "E.g. 35.0"
+        },
+        "vendor": {
+          "type": "string",
+          "description": "E.g. Mozilla"
+        },
+        "platformVersion": {
+          "type": "string",
+          "description": "E.g. 35.0"
+        },
+        "xpcomAbi": {
+          "type": "string",
+          "description": "E.g. x86-msvc"
+        },
+        "channel": {
+          "type": "string",
+          "description": "-> enum? nightly, beta, etc."
+        }
+      },
+      "required": ["architecture"]
+    },
+    "environment": {
+      "type": "object"
+    },
+    "payload": {
+      "type": "object"
+    }
+  },
+  "required": ["type", "id", "creationDate", "version"]
+}
