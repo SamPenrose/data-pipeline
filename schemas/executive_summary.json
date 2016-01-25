@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Executive Summary",
+  "description": "The executive summary derived stream",
+  "type": "object",
+  "properties": {
+    "Hostname": {
+      "type": "string"
+    },
+    "Timestamp": {
+      "type": "number"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "activityTimestamp": {
+      "type": "number"
+    },
+    "app": {
+      "type": "string"
+    },
+    "bing": {
+      "type": "number"
+    },
+    "buildId": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string",
+      "enum": ["nightly", "aurora", "beta", "release"]
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "default": {
+      "type": "boolean"
+    },
+    "docType": {
+      "type": "string"
+    },
+    "documentId": {
+      "type": "string"
+    },
+    "google": {
+      "type": "number"
+    },
+    "hours": {
+      "type": "number"
+    },
+    "os": {
+      "type": "string"
+    },
+    "osVersion": {
+      "type": "string"
+    },
+    "other": {
+      "type": "number"
+    },
+    "profileCreationTimestamp": {
+      "type": "number"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "submissionDate": {
+      "type": "string"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "yahoo": {
+      "type": "number"
+    }
+  },
+  "required": ["clientId"]
+}

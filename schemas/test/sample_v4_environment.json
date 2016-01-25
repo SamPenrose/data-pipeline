@@ -1,0 +1,403 @@
+{  "environment": {
+    "addons": {
+      "activeAddons": {
+        "adbhelper@mozilla.org": {
+          "appDisabled": false,
+          "blocklisted": false,
+          "description": "An addon to ease connecting to Firefox OS devices.",
+          "foreignInstall": false,
+          "hasBinaryComponents": false,
+          "installDay": 16232,
+          "name": "ADB Helper",
+          "scope": 1,
+          "signedState": 1,
+          "type": "extension",
+          "updateDay": 16729,
+          "userDisabled": false,
+          "version": "0.8.5"
+        },
+        "eliteproxyswitcher@my-proxy.com": {
+          "appDisabled": false,
+          "blocklisted": false,
+          "description": "Automatically change the proxy for Firefox.",
+          "foreignInstall": false,
+          "hasBinaryComponents": false,
+          "installDay": 16644,
+          "name": "Elite Proxy Switcher",
+          "scope": 1,
+          "signedState": 2,
+          "type": "extension",
+          "updateDay": 16644,
+          "userDisabled": false,
+          "version": "1.2.0.2.1-signed"
+        },
+        "foxyproxy@eric.h.jung": {
+          "appDisabled": false,
+          "blocklisted": false,
+          "description": "FoxyProxy - Premier proxy management for Firefox",
+          "foreignInstall": false,
+          "hasBinaryComponents": false,
+          "installDay": 16637,
+          "name": "FoxyProxy Standard",
+          "scope": 1,
+          "signedState": 2,
+          "type": "extension",
+          "updateDay": 16637,
+          "userDisabled": false,
+          "version": "4.5.5"
+        },
+        "fxdevtools-adapters@mozilla.org": {
+          "appDisabled": false,
+          "blocklisted": false,
+          "description": "Protocol Adapters for Firefox Developer Tools. User documentation is available on MDN: https://devel",
+          "foreignInstall": false,
+          "hasBinaryComponents": false,
+          "installDay": 16548,
+          "name": "Valence",
+          "scope": 1,
+          "signedState": 1,
+          "type": "extension",
+          "updateDay": 16729,
+          "userDisabled": false,
+          "version": "0.3.3"
+        },
+        "fxos_1_4_simulator@mozilla.org": {
+          "appDisabled": false,
+          "blocklisted": false,
+          "description": "a Firefox OS 1.4 simulator",
+          "foreignInstall": false,
+          "hasBinaryComponents": false,
+          "installDay": 16232,
+          "name": "Firefox OS 1.4 Simulator",
+          "scope": 1,
+          "signedState": 2,
+          "type": "extension",
+          "updateDay": 16673,
+          "userDisabled": false,
+          "version": "1.4.20140506.1-signed"
+        },
+        "fxos_2_1_simulator@mozilla.org": {
+          "appDisabled": false,
+          "blocklisted": false,
+          "description": "a Firefox OS 2.1 simulator",
+          "foreignInstall": false,
+          "hasBinaryComponents": false,
+          "installDay": 16330,
+          "name": "Firefox OS 2.1 Simulator",
+          "scope": 1,
+          "signedState": 2,
+          "type": "extension",
+          "updateDay": 16673,
+          "userDisabled": false,
+          "version": "2.1.20141223.1-signed"
+        },
+        "masspasswordreset@johnathan.nightingale": {
+          "appDisabled": false,
+          "blocklisted": false,
+          "description": "Sometimes you change a central password that ends up changing 12 others.  This add on helps you rese",
+          "foreignInstall": 0,
+          "hasBinaryComponents": false,
+          "installDay": 15988,
+          "name": "Mass Password Reset",
+          "scope": 1,
+          "signedState": 2,
+          "type": "extension",
+          "updateDay": 16565,
+          "userDisabled": false,
+          "version": "1.05.1-signed"
+        }
+      },
+      "activeExperiment": {},
+      "activeGMPlugins": {
+        "gmp-gmpopenh264": {
+          "applyBackgroundUpdates": 1,
+          "userDisabled": false,
+          "version": "1.4"
+        }
+      },
+      "activePlugins": [
+        {
+          "blocklisted": false,
+          "clicktoplay": true,
+          "description": "Version 5.41.0.0",
+          "disabled": false,
+          "mimeTypes": [
+            "application/googletalk"
+          ],
+          "name": "Google Talk Plugin",
+          "updateDay": 16520,
+          "version": "5.41.0.0"
+        },
+        {
+          "blocklisted": false,
+          "clicktoplay": true,
+          "description": "Version 5.41.0.0",
+          "disabled": false,
+          "mimeTypes": [
+            "application/o1d"
+          ],
+          "name": "Google Talk Plugin Video Renderer",
+          "updateDay": 16520,
+          "version": "5.41.0.0"
+        },
+        {
+          "blocklisted": false,
+          "clicktoplay": true,
+          "description": "Provides information about the default web browser",
+          "disabled": false,
+          "mimeTypes": [
+            "application/apple-default-browser"
+          ],
+          "name": "Default Browser Helper",
+          "updateDay": 16633,
+          "version": "600"
+        },
+        {
+          "blocklisted": false,
+          "clicktoplay": true,
+          "description": "The QuickTime Plugin allows you to view a wide variety of multimedia content in web pages. For more ",
+          "disabled": false,
+          "mimeTypes": [
+            "video/x-msvideo",
+            "audio/mp3",
+            "audio/mpeg3",
+            "video/3gpp2",
+            "audio/x-caf",
+            "audio/mpeg",
+            "video/quicktime",
+            "audio/x-mpeg3",
+            "video/mp4",
+            "application/x-sdp",
+            "audio/wav",
+            "video/avi",
+            "audio/x-ac3",
+            "audio/mp4",
+            "video/x-m4v",
+            "application/sdp",
+            "audio/x-wav",
+            "audio/x-aiff",
+            "video/x-mpeg",
+            "video/3gpp",
+            "video/msvideo",
+            "audio/x-mpeg",
+            "audio/vnd.qcelp",
+            "audio/x-mp3",
+            "application/x-rtsp",
+            "audio/amr",
+            "video/sd-video",
+            "audio/aiff",
+            "video/mpeg",
+            "audio/3gpp2",
+            "audio/aac",
+            "audio/ac3",
+            "audio/x-m4b",
+            "audio/x-m4p",
+            "audio/x-gsm",
+            "application/x-mpeg",
+            "audio/x-aac",
+            "audio/basic",
+            "audio/x-m4a",
+            "audio/3gpp"
+          ],
+          "name": "QuickTime Plug-in 7.7.3",
+          "updateDay": 16638,
+          "version": "7.7.3"
+        },
+        {
+          "blocklisted": false,
+          "clicktoplay": true,
+          "description": "5.1.40728.0",
+          "disabled": false,
+          "mimeTypes": [
+            "application/x-silverlight",
+            "application/x-silverlight-2"
+          ],
+          "name": "Silverlight Plug-In",
+          "updateDay": 16644,
+          "version": "5.1.40728.0"
+        },
+        {
+          "blocklisted": false,
+          "clicktoplay": true,
+          "description": "Displays Java applet content, or a placeholder if Java is not installed.",
+          "disabled": false,
+          "mimeTypes": [
+            "application/x-java-applet;version=1.4",
+            "application/x-java-applet;version=1.2.1",
+            "application/x-java-applet;jpi-version=1.8.0_60",
+            "application/x-java-applet;version=1.2.2",
+            "application/x-java-applet;version=1.3",
+            "application/x-java-applet;version=1.8",
+            "application/x-java-vm",
+            "application/x-java-applet;version=1.1.1",
+            "application/x-java-applet;version=1.2",
+            "application/x-java-applet;version=1.7",
+            "application/x-java-applet;version=1.4.1",
+            "application/x-java-applet;version=1.1.2",
+            "application/x-java-applet",
+            "application/x-java-applet;deploy=11.60.2",
+            "application/x-java-applet;version=1.1",
+            "application/x-java-applet;version=1.1.3",
+            "application/x-java-applet;version=1.6",
+            "application/x-java-applet;javafx=8.0.60",
+            "application/x-java-applet;version=1.4.2",
+            "application/x-java-applet;version=1.3.1",
+            "application/x-java-applet;version=1.5"
+          ],
+          "name": "Java Applet Plug-in",
+          "updateDay": 16651,
+          "version": "Java 8 Update 60 build 27"
+        },
+        {
+          "blocklisted": false,
+          "clicktoplay": true,
+          "description": "Shockwave Flash 19.0 r0",
+          "disabled": false,
+          "mimeTypes": [
+            "application/x-shockwave-flash",
+            "application/futuresplash"
+          ],
+          "name": "Shockwave Flash",
+          "updateDay": 16725,
+          "version": "19.0.0.226"
+        }
+      ],
+      "persona": null,
+      "theme": {
+        "appDisabled": false,
+        "blocklisted": false,
+        "description": "The default theme.",
+        "foreignInstall": false,
+        "hasBinaryComponents": false,
+        "id": "{972ce4c6-7e08-4474-a285-3208198ce6fd}",
+        "installDay": 15937,
+        "name": "Default",
+        "scope": 4,
+        "updateDay": 16742,
+        "userDisabled": false,
+        "version": "45.0a1"
+      }
+    },
+    "build": {
+      "applicationId": "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+      "applicationName": "Firefox",
+      "architecture": "x86-64",
+      "architecturesInBinary": "i386-x86_64",
+      "buildId": "20151103030248",
+      "hotfixVersion": "20150225.01",
+      "platformVersion": "45.0a1",
+      "vendor": "Mozilla",
+      "version": "45.0a1",
+      "xpcomAbi": "x86_64-gcc3"
+    },
+    "partner": {
+      "distributionId": null,
+      "distributionVersion": null,
+      "distributor": null,
+      "distributorChannel": null,
+      "partnerId": null,
+      "partnerNames": []
+    },
+    "profile": {
+      "creationDate": 15987
+    },
+    "settings": {
+      "addonCompatibilityCheckEnabled": true,
+      "blocklistEnabled": true,
+      "defaultSearchEngine": "google",
+      "defaultSearchEngineData": {
+        "loadPath": "jar:[app]/omni.ja!browser/google.xml",
+        "name": "Google",
+        "submissionURL": "https://www.google.com/search?q=&ie=utf-8&oe=utf-8"
+      },
+      "e10sEnabled": true,
+      "isDefaultBrowser": true,
+      "isInOptoutSample": false,
+      "locale": "en-US",
+      "telemetryEnabled": true,
+      "update": {
+        "autoDownload": true,
+        "channel": "nightly",
+        "enabled": true
+      },
+      "userPrefs": {
+        "browser.cache.disk.capacity": 358400,
+        "browser.newtabpage.enhanced": true,
+        "browser.startup.page": 3,
+        "browser.urlbar.suggest.searches": true,
+        "browser.urlbar.userMadeSearchSuggestionsChoice": true,
+        "devtools.chrome.enabled": true
+      }
+    },
+    "system": {
+      "cpu": {
+        "cores": 4,
+        "count": 8,
+        "extensions": [
+          "hasMMX",
+          "hasSSE",
+          "hasSSE2",
+          "hasSSE3",
+          "hasSSSE3",
+          "hasSSE4_1",
+          "hasSSE4_2"
+        ],
+        "family": 6,
+        "l2cacheKB": 256,
+        "l3cacheKB": 6144,
+        "model": 70,
+        "speedMHz": 2800,
+        "stepping": 1,
+        "vendor": "GenuineIntel"
+      },
+      "gfx": {
+        "D2DEnabled": null,
+        "DWriteEnabled": null,
+        "adapters": [
+          {
+            "GPUActive": true,
+            "RAM": null,
+            "description": null,
+            "deviceID": "0x6821",
+            "driver": null,
+            "driverDate": null,
+            "driverVersion": null,
+            "subsysID": null,
+            "vendorID": "0x1002"
+          }
+        ],
+        "features": {
+          "compositor": "none"
+        },
+        "monitors": [
+          {
+            "scale": 2,
+            "screenHeight": 900,
+            "screenWidth": 1440
+          }
+        ]
+      },
+      "hdd": {
+        "binary": {
+          "model": null,
+          "revision": null
+        },
+        "profile": {
+          "model": null,
+          "revision": null
+        },
+        "system": {
+          "model": null,
+          "revision": null
+        }
+      },
+      "memoryMB": 16384,
+      "os": {
+        "locale": "en-US",
+        "name": "Darwin",
+        "version": "14.5.0"
+      },
+      "virtualMaxMB": null
+    }
+  }
+}

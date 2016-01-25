@@ -4,7 +4,7 @@ from jsonschema import validate, ValidationError
 LOCAL = os.path.dirname(__file__)
 SAMPLE_PING_PATH = os.path.join(LOCAL, 'sample_v4_ping.json')
 BASE_SET_PATH = os.path.join(LOCAL, '..', 'base_set.json')
-CRASH_SUMMARY_PATH = os.path.join(LOCAL, '..', 'crash_summary.json')
+EXECUTIVE_SUMMARY_PATH = os.path.join(LOCAL, '..', 'executive_summary.json')
 VALID_CRASH_SUMMARY = [
   1446836356.902004, # XXX -> nanoseconds?
   '2015-01-01', # XXX also
@@ -37,14 +37,14 @@ class TestBaseSet(unittest.TestCase):
             ping = json.load(f)
         validate(ping, schema)
 
-    def test_crash_summary(self):
-        with open(CRASH_SUMMARY_PATH) as f:
+    def test_executive_summary(self):
+        with open(EXECUTIVE_SUMMARY_PATH) as f:
             schema = json.load(f)
         # The presence of $schema means that validate will verify that
-        # base_set.json meets the requirements for version 4 of JSON schema
+        # the file meets the requirements for version 4 of JSON schema
         self.failUnless('$schema' in schema)
-        self.assertRaises(ValidationError, validate, [], schema)
-        validate(VALID_CRASH_SUMMARY, schema)
+        self.assertRaises(ValidationError, validate, {}, schema)
+        # validate(VALID_CRASH_SUMMARY, schema)
 
 
 if __name__ == '__main__':

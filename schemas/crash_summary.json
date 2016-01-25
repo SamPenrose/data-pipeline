@@ -6,7 +6,8 @@
   "items": [
     {
       "type": "number",
-      "description": "Timestamp"
+      "description": "Timestamp",
+      "name": "Timestamp"
     },
     {
       "type": "string",
