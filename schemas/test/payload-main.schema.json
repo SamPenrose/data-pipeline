@@ -1,0 +1,84 @@
+{
+  "payload": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "name": "payload",
+    "type": "object",
+    "properties": {
+      "addonDetails" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "addonHistograms" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "childPayloads" : {
+        "type": "array"
+      },
+      "chromeHangs" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "fileIOReports" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "histograms" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "info" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "keyedHistograms" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "lateWrites" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "log": {
+        "type": "array"
+      },
+      "simpleMeasurements" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "slowSQL" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "slowSQLstartup" : {
+        "type": "object",
+        "properties": {
+        }
+      },
+      "threadHangStats" : {
+        "type": "array"
+      },
+      "UIMeasurements" : {
+        "type": "array"
+      },
+      "ver": {
+        "type": "integer"
+      },
+      "webrtc" : {
+        "type": "object",
+        "properties": {
+        }
+      }
+    }
+  }
+}
