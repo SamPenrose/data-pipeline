@@ -50,7 +50,6 @@
         "applicationName",
         "architecture",
         "buildId",
-        "hotfixVersion",
         "version",
         "vendor",
         "platformVersion",
@@ -76,7 +75,7 @@
           "type": ["string", "null"]
         },
         "partnerNames": {
-          "type": "array"
+          "type": ["array", "object"]
         }
       }
     },
@@ -84,14 +83,10 @@
       "type": "object",
       "properties": {
         "creationDate": {
-          "type": "number",
-          "minimum": 12775,
-          "maximum": 18250
+          "type": "number"
         },
         "resetDate": {
-          "type": "number",
-          "minimum": 12775,
-          "maximum": 18250
+          "type": "number"
         }
       }
     },
@@ -224,7 +219,7 @@
               "type": "array"
             },
             "monitors": {
-              "type": "array"
+              "type": ["array", "object"]
             }
           }
         },

@@ -48,7 +48,7 @@
         }
       },
       "log": {
-        "type": "array"
+        "type": ["array", "object"]
       },
       "simpleMeasurements" : {
         "type": "object",
@@ -66,10 +66,10 @@
         }
       },
       "threadHangStats" : {
-        "type": "array"
+        "type": ["array", "object"]
       },
       "UIMeasurements" : {
-        "type": "array"
+        "type": ["array", "object"]
       },
       "ver": {
         "type": "integer"

@@ -13,7 +13,7 @@
       },
       "channel": {
         "type": "string",
-        "enum": ["nightly", "aurora", "beta", "main"]
+        "enum": ["nightly", "aurora", "beta", "release"]
       },
       "name": {
         "type": "string"
