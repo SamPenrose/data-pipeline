@@ -193,17 +193,20 @@
           }
         },
         "device": {
-          "model": {
-            "type": "string"
-          },
-          "manufacturer": {
-            "type": "string"
-          },
-          "hardware": {
-            "type": "string"
-          },
-          "isTablet": {
-            "type": "boolean"
+          "type": "object",
+          "properties": {
+            "model": {
+              "type": "string"
+            },
+            "manufacturer": {
+              "type": "string"
+            },
+            "hardware": {
+              "type": "string"
+            },
+            "isTablet": {
+              "type": "boolean"
+            }
           }
         },
         "gfx": {
